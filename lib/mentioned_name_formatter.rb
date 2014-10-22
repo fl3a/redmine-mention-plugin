@@ -12,7 +12,7 @@ module MentionedNameFormatter
     mentioned_users.each do |mentioned_user|
       username = mentioned_user[1..-1] # Remove the heading ':'
       if user = User.find_by_login(username)
-        text.gsub!(mentioned_user, "<a href=\"#{baseurl}/users/#{user.id}\">#{mentioned_user}</a>")
+        text.gsub!(mentioned_user, "<a href=\"#{baseurl}/people/#{user.id}\">#{user.name}</a>")
       end
     end
   end
