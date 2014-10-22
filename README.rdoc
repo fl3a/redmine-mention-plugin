@@ -8,6 +8,10 @@ Add user to the watchers list of an issue after mentioning him/her in the note. 
 Just clone the plugin into your plugins dir and restart Redmine.
 No further changes are required, it should Just Work.
 
+= Fork by fl3a
+
+* Substitutes shown @username/@user.name to Fullname
+* Replaces link target to "people/USER_ID" (redmine_people) 
 
 = Fork by bigpresh to add Redmine 2.x support
 
